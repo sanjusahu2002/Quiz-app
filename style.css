@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#quiz-container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background:linear-gradient(120deg,rgb(156, 217, 231),rgb(207, 244, 207));
+    
+}
+
+#quiz-container h2{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+
+    width: 100%;
+    max-width: 200px;
+}
+#quiz-container h2 img{
+    width: 100px;
+
+    background: transparent;
+    
+}
+#quiz-container h2 p{
+    position: absolute;
+    right: 25px;
+    color: rgb(14, 112, 112);
+}
+
+#section-div{
+    width: 95%;
+    /* height: 80%; */
+    margin: 10px auto 10px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px ;
+    padding: 10px;
+
+
+    
+}
+.section{
+    width: 100%;
+    height: 100%px;
+    /* border:2px solid black; */
+    border-left: 1px solid brown;
+    border-bottom: 1px solid brown;
+    box-shadow: -5px 6px 5px -3px brown;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 0.2s linear;
+    gap: 5px;
+}
+.section:hover{
+    transform: scale(1.01);
+    
+}
+.section h4{
+    font-size: 35px;
+    color: rgb(95, 97, 160);
+    font-weight: 800;
+}
+.section div h6{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+.section div p{
+    font-size: 15px;
+    line-height: 20px;
+    word-spacing: 5px;
+}
+.section button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent; 
+    border: none;
+    outline: none;
+    background-color: beige;  
+    border-radius: 30px;
+
+}
+
+
+
+/* question container */
+#question-container{
+    width: 60%;
+    margin: 20px auto 10px;
+    /* height: 50vh; */
+    /* border-left: 1px solid brown; */
+    /* border-bottom: 1px solid brown; */
+    box-shadow: -5px 6px 5px -3px brown; 
+    padding: 10px;
+    display: none;
+
+}
+
+#question-container h3{
+    width: 100%;
+ 
+}
+#question-container ul button{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 6px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+
+    
+}
+#question-container ul button:hover{
+    background-color: rgb(139, 138, 138);
+    color: white;
+    transform: scale(1.01);
+}
+#f-div{
+    margin: 5px 0px;
+    
+}
+#next-btn{
+    display: block;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(0, 0, 122);
+    cursor: pointer;
+}
+#fill-type-question,#num-type-question{
+    width: 100%;
+    margin: 10px 0px;
+}
+#fill-type-question input,#num-type-question input{
+
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+#fill-type-question button ,#num-type-question button{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    font-size: 12px;
+    background-color: #009bcf;
+    color: white;
+}
+#num-type-question button{
+    display: block;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    font-size: 12px;
+    background-color: #009bcf;
+    color: white;
+}
+
+.selected {
+    background-color: aquamarine;
+}
+
+/* responsiveness */
+@media screen and (max-width:590px) {
+    #quiz-container{
+        height: fit-content;
+    }
+    #section-div{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    #question-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:729px){
+
+    #fill-type-question input, #num-type-question input{
+        width: 100%;
+    }
+    #fill-type-question button ,#num-type-question input{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}

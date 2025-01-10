@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assests/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assests/favicon.svg" />
+    <link rel="shortcut icon" href="assests/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/apple-touch-icon.png" />
+    <link rel="manifest" href="assests/site.webmanifest" />
+</head>
+<body>
+    <div id="quiz-container">
+        <h2><img src="./assests/rb_53289.png" alt=""><p>QUIZzzz</p></h2>
+        <div id="section-div" >
+            <div class="section">
+                <h4>General Knowledge</h4>
+                <div>
+                    <h6>About</h6>
+                    <p>
+                        It enhance your knowledge about general . It makes you understandable
+                        that what is happening around the world. It makes you feel confident.
+                    </p>
+                </div>
+                <button id="gn-play" onclick="startQuiz(0)">Play Now</button>
+            </div>
+            <div class="section">
+                <h4>Science</h4>
+                <div>
+                    <h6>About</h6>
+                    <p>
+                        It makes
+                        us understand , what is the concept behind the things. How human body
+                        works , how airplane fly all the concept behind it can be understand through
+                        science,
+                    </p>
+                </div>
+                <button id="science-play" onclick="startQuiz(1)">Play Now</button>
+            </div>
+            <div class="section">
+                <h4>Mathematics</h4>
+                <div>
+                    <h6>About</h6>
+                    <p>
+                        Solving math question makes you fast and accurate. Maths helps
+                        us to improve our focus , it makes us to make strong foundation 
+                        about calculation . 
+                    </p>
+                </div>
+                <button id="math-play" onclick="startQuiz(2)">Play Now</button>
+            </div>
+            <div class="section">
+                <h4>Indian history</h4>
+                <div>
+                    <h6>About</h6>
+                    <p>
+                        Our history is the main source of increasing our knowledge. It
+                        enhance our beliefs , makes our mind strong. 
+                    </p>
+                </div>
+                <button id="history-play" onclick="startQuiz(3)">Play Now</button>
+            </div>
+            
+
+        </div>
+        <div id="question-container">
+            <p id="score">Score : 0</p>
+            <h3 id="question" >Question</h3>
+            <ul id="questions-btn" >
+                <!-- <button>option 1 is the new you</button>
+                <button>option 1</button>
+                <button>option 1</button>
+                <button>option 1</button> -->
+            </ul>
+            <div id="fill-type-question">
+                <input type="text" id="answer" required>
+                <button type="submit" id="submit-answer">Submit</button>
+            </div>
+            <div id="num-type-question" >
+                <input type="number" id="num" required>
+                <button type="submit" id="num-answer">Submit</button>
+            </div>
+            <p id="f-div"></p>
+            <button id="next-btn" >Next</button>
+        </div>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
