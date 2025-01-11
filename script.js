@@ -387,6 +387,7 @@ function startQuiz(index){
         nextBtn.innerHTML = 'Next';
         count= 0;
         score = 0;
+        document.getElementById('score').innerHTML = `Score : ${score}`;
         
       } 
     }
